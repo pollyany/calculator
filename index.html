@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/2476720ce5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="calculator">
+            <h3>Calculadora</h3>
+            <p id="res"></p>
+            <table>
+                <tr>
+                    <td><button class="btn especial" onclick="limpar()"><i class="fa-solid fa-c"></i></button></td> <!--Limpar-->
+                    <td><button class="btn especial" onclick="back()"><i class="fa-solid fa-delete-left"></i></button></td> <!--Apagar-->
+                    <td><button class="btn especial" onclick="insert('%')"><i class="fa-solid fa-percent"></i></button></td><!--Porcent.-->
+                    <td><button class="btn especial" onclick="insert('/')"><i class="fa-solid fa-divide"></i></button></td><!--Divisão-->
+                </tr>
+
+                <tr>
+                    <td><button class="btn" onclick="insert('7')"><i class="fa-solid fa-7"></i></button></td>
+                    <td><button class="btn" onclick="insert('8')"><i class="fa-solid fa-8"></i></button></td>
+                    <td><button class="btn" onclick="insert('9')"><i class="fa-solid fa-9"></i></button></td>
+                    <td><button class="btn especial" onclick="insert('*')"><i class="fa-solid fa-xmark"></i></button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="btn" onclick="insert('4')"><i class="fa-solid fa-4"></i></button></td>
+                    <td><button class="btn" onclick="insert('5')"><i class="fa-solid fa-5"></i></button></td>
+                    <td><button class="btn" onclick="insert('6')"><i class="fa-solid fa-6"></i></button></td>
+                    <td><button class="btn especial" onclick="insert('-')"><i class="fa-solid fa-minus"></i></button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="btn" onclick="insert('1')"><i class="fa-solid fa-1"></i></button></td>
+                    <td><button class="btn" onclick="insert('2')"><i class="fa-solid fa-2"></i></button></td>
+                    <td><button class="btn" onclick="insert('3')"><i class="fa-solid fa-3"></i></button></td>
+                    <td><button class="btn especial" onclick="insert('+')"><i class="fa-solid fa-plus"></i></button></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><button class="btn" onclick="insert('0')" style="width: 102px;"><i class="fa-solid fa-0"></i></button></td>
+                    <td><button class="btn point" onclick="insert('.')"><strong>.</strong></button></td>
+                    <td><button class="btn especial" onclick="calcular()"><i class="fa-solid fa-equals"></i></button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
